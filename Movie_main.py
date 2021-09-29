@@ -6,7 +6,7 @@ loaded_model = pickle.load(open('LR movie new.pkl', 'rb'))
 loaded_tfidf = pickle.load(open('tf_idf movie.pkl','rb')) 
 
 def UI_Page():
-    st.title("Movie Review Sentiment Analysis") 
+    st.title("Review Sentiment Analysis") 
     review = st.text_input("Enter your Review: ") 
     ok=st.button("CHECK")
     if ok == True:
