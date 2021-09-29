@@ -7,8 +7,8 @@ loaded_tfidf = pickle.load(open('tf_idf movie.pkl','rb'))
 
 def UI_Page():
     st.title("Movie Review Sentiment Analysis") 
-    review = st.text_input("Enter your Movie Review: ") 
-    ok=st.button("predict the class")
+    review = st.text_input("Enter your Review: ") 
+    ok=st.button("CHECK")
     if ok == True:
         if len(review) == 0:
             st.error('Please enter some data')
